@@ -1,4 +1,4 @@
-package by.it.group251005.SkokoffA.lesson01;
+package by.it.group251005.skokov.lesson01;
 
 import org.junit.Test;
 

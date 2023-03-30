@@ -1,4 +1,4 @@
-package by.it.group251005.SkokoffA.lesson01;
+package by.it.group251005.skokov.lesson01;
 
 /*
  * Даны целые числа 1<=n<=1E18 и 2<=m<=1E5,

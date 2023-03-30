@@ -4,6 +4,8 @@ import java.math.BigInteger;
 
 /*
  * Вам необходимо выполнить рекурсивный способ вычисления чисел Фибоначчи
+
+ *
  */
 
 public class FiboA {
@@ -29,28 +31,19 @@ public class FiboA {
     }
 
     private int calc(int n) {
-        //здесь простейший вариант, в котором код совпадает
-        //с математическим определением чисел Фибоначчи
-        //время O(2^n)
-        if ((n == 0) || (n == 1))
-            return n;
-        else
-            return calc(n - 1) + calc(n - 2);
+        if (n<2) return n;
+        return calc (n-1) + calc(n-2);
     }
 
 
-    BigInteger slowA(int n) {
-        //рекурсия
-        //здесь нужно реализовать вариант без ограничения на размер числа,
-        //в котором код совпадает с математическим определением чисел Фибоначчи
-        //время O(2^n)
-        if (n == 0 || n == 1) {
-            return BigInteger.valueOf(n);
-        } else {
-            return slowA(n - 1).add(slowA(n - 2));
-        }
+    BigInteger slowA(Integer n) {
+        if (n==0) return BigInteger.ZERO;
+        if (n==1) return BigInteger.ONE;
+        return slowA(n-1).add(slowA(n-2));
     }
 
 
 }
+
+
 
